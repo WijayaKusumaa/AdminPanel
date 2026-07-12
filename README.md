@@ -8,6 +8,12 @@ A premium, world-class enterprise SaaS Admin Panel focusing on high-security ope
 
 ---
 
+## 📸 Preview
+
+<p align="center">
+  <img src="./assets/AdminPanel.png" alt="Enterprise Admin Panel" width="100%">
+</p>
+
 ## ✨ Key Features & Views
 
 The console is fully modular, dividing administration capabilities into isolated views:
