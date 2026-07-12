@@ -7,12 +7,7 @@
 A premium, world-class enterprise SaaS Admin Panel focusing on high-security operations, user access governance, compliance audit tracking, and key developer integrations. The workspace incorporates an elegant, dark-first custom design system using Tailwind CSS, Radix UI primitives, Lucide Icons, and beautiful CSS/Motion transitions.
 
 ---
-
-## 📸 Preview
-
-<p align="center">
-  <img src="./assets/AdminPanel.png" alt="Enterprise Admin Panel" width="100%">
-</p>
+![Admin Panel](AdminPanel.png)
 
 ## ✨ Key Features & Views
 
