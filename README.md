@@ -150,3 +150,12 @@ git config --global core.autocrlf true
 # Alternatively, disable warnings for line ending conversions
 git config --global core.safecrlf false
 ```
+
+
+---
+
+<div align="center">
+
+Made with ❤️ by **Wijaya Kusuma**
+
+</div>
