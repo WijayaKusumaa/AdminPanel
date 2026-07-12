@@ -115,3 +115,37 @@ The output assets will be created in the `/dist` directory.
 *   **Icons**: [Lucide React](https://lucide.dev/)
 *   **Charts**: [Recharts](https://recharts.org/)
 *   **Notifications**: [Sonner](https://sonner.dev/)
+
+---
+
+## 📝 Git Best Practices & Troubleshooting
+
+### Ignoring Unnecessary Files
+To keep the repository clean and efficient, make sure you ignore dependencies and build outputs. The project contains a [`.gitignore`](file:///.gitignore) file configured to skip tracking for:
+- `node_modules/` (dependencies)
+- `dist/` (build artifacts)
+- `*.log` (temporary logs)
+- `.env*` (sensitive environments)
+
+If you accidentally tracked `node_modules` before configuring `.gitignore`, you can untrack them without deleting files locally by running:
+```bash
+git rm -r --cached node_modules
+```
+
+### Dealing with "LF will be replaced by CRLF" Warnings
+When adding files via `git add .` on Windows, you might encounter warnings such as:
+> `warning: in the working copy of '...', LF will be replaced by CRLF the next time Git touches it`
+
+**Why this happens:**
+- **LF** (Line Feed) is the line ending character for Unix/Linux/macOS systems.
+- **CRLF** (Carriage Return Line Feed) is the line ending character for Windows.
+
+Git automatically normalizes line endings between Windows and Unix standards depending on your global settings. This warning is safe to ignore, but you can configure Git's line ending handling globally by running:
+
+```bash
+# Recommended for Windows users (converts LF to CRLF on checkout, CRLF to LF on commit)
+git config --global core.autocrlf true
+
+# Alternatively, disable warnings for line ending conversions
+git config --global core.safecrlf false
+```
